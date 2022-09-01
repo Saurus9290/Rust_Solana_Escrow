@@ -48,9 +48,8 @@ impl EscrowInstruction {
             0 => Self::InitEscrow {
                 amount: Self::unpack_amount(rest)?,
             },
-            1 => Self::Exchange {
-                amount: Self::unpack_amount(rest)?,
-            },
+            //Paste your code here - for Exchange matching
+            
             _ => return Err(InvalidInstruction.into()),
         })
     }
